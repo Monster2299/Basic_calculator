@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         delete.setOnClickListener(this);
     }
 
-    @SuppressLint("NonConstantResourceId")
+    @SuppressLint({"NonConstantResourceId", "SetTextI18n"})
     @Override
     public void onClick(View v) {
     switch (v.getId()){
@@ -128,11 +129,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             display.append("*");
             break;
         case R.id.button15 :
-
             String dis = display.getText().toString();
-            Expression expression = new ExpressionBuilder(dis).build();
-            double result = expression.evaluate();
-            display.append("="+result);
+           int n = dis.length();
+            if (n>0) {
+                char first = dis.charAt(0);
+                char last = dis.charAt(n - 1);
+                boolean eq;
+                eq = dis.contains("=");
+                if (first != '+' && first != '-' && first != '/' && first != '*' && first != '=' && last != '+' && last != '-' && last != '*' && last != '/' && last != '=' && first != 'S' && !eq) {
+                    Expression expression = new ExpressionBuilder(dis).build();
+                    double result = expression.evaluate();
+                    display.append("=" + result);
+                } else {
+                    display.setText("Syntax Error !");
+                }
+            }else {
+                Toast.makeText(this, "Input is blank !", Toast.LENGTH_SHORT).show();
+            }
             break;
     }
 
