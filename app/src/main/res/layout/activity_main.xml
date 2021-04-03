@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:backgroundTint="@color/material_on_background_emphasis_high_type"
+        android:backgroundTintMode="screen"
+        android:maxLines="4"
+        android:textColor="@color/white"
+        android:textSize="46sp"
+        
+        android:focusable="false"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/delete"
+            style="@style/CardView.Dark"
+            android:layout_width="209dp"
+            android:layout_height="53dp"
+            android:backgroundTint="#E91E63"
+            android:text="@string/delete"
+            android:textColor="#FBFAFA"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="206dp" />
+
+        <Button
+            android:id="@+id/clear"
+            style="@style/CardView.Dark"
+            android:layout_width="202dp"
+            android:layout_height="52dp"
+            android:backgroundTint="#F80707"
+            android:text="@string/c"
+            android:textColor="#F8F5F5"
+            tools:layout_editor_absoluteX="209dp"
+            tools:layout_editor_absoluteY="206dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button"
+            android:layout_width="106dp"
+            android:layout_height="112dp"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:text="@string/_7"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="46sp"
+            app:rippleColor="@color/white"
+            tools:layout_editor_absoluteY="252dp" />
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button2"
+            android:layout_width="117dp"
+            android:layout_height="112dp"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:text="@string/_8"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="46sp"
+            app:rippleColor="@color/white"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="252dp" />
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button3"
+            android:layout_width="110dp"
+            android:layout_height="112dp"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:text="@string/_9"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="46sp"
+            app:rippleColor="@color/white"
+            tools:layout_editor_absoluteX="223dp"
+            tools:layout_editor_absoluteY="252dp" />
+
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/mult"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#009688"
+            android:text="@string/mult"
+            android:textSize="32sp"
+            app:rippleColor="@color/white"
+            tools:layout_editor_absoluteX="333dp"
+            tools:layout_editor_absoluteY="252dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button6"
+            android:layout_width="106dp"
+            android:layout_height="112dp"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:text="@string/_4"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="46sp"
+            app:rippleColor="@color/white"
+            tools:layout_editor_absoluteY="353dp" />
+
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button5"
+            android:layout_width="118dp"
+            android:layout_height="112dp"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:text="@string/_5"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="46sp"
+            app:rippleColor="@color/white"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="353dp" />
+
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button4"
+            android:layout_width="110dp"
+            android:layout_height="112dp"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:text="@string/_6"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="46sp"
+            app:rippleColor="@color/white"
+            tools:layout_editor_absoluteX="225dp"
+            tools:layout_editor_absoluteY="353dp" />
+
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#9C27B0"
+            android:text="@string/div"
+            android:textSize="32sp"
+            app:rippleColor="@color/white"
+            tools:layout_editor_absoluteX="338dp"
+            tools:layout_editor_absoluteY="364dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button7"
+            android:layout_width="106dp"
+            android:layout_height="112dp"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:text="@string/one"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="46sp"
+            app:rippleColor="@color/white"
+            tools:layout_editor_absoluteY="483dp" />
+
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button8"
+            android:layout_width="118dp"
+            android:layout_height="112dp"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:text="@string/two"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="46sp"
+            app:rippleColor="@color/white"
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="483dp" />
+
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button9"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:text="@string/_3"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="46sp"
+            app:rippleColor="@color/white"
+            tools:layout_editor_absoluteX="231dp"
+            tools:layout_editor_absoluteY="481dp" />
+
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#2196F3"
+            android:text="@string/subs"
+            android:textSize="32sp"
+            tools:layout_editor_absoluteX="341dp"
+            tools:layout_editor_absoluteY="481dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button10"
+            android:layout_width="107dp"
+            android:layout_height="108dp"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:text="@string/z"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="46sp"
+            app:rippleColor="@color/white"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="607dp" />
+
+         <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button14"
+            android:layout_width="152dp"
+            android:layout_height="108dp"
+            android:backgroundTint="#4CAF50"
+            android:text="@string/add"
+            android:textSize="42sp"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="607dp" />
+
+          <Button
+            style="@style/CardView.Dark"
+            android:id="@+id/button15"
+            android:layout_width="153dp"
+            android:layout_height="107dp"
+            android:backgroundTint="#FF9800"
+            android:text="@string/eq"
+            android:textSize="42sp"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="608dp"
+          
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
