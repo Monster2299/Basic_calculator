@@ -13,7 +13,7 @@ import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn0;
+    private Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn0,btnD;
     private Button add,sub,div,multi,eq,clear,delete;
     private TextView display;
 
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn7 = findViewById(R.id.button);
         btn8 = findViewById(R.id.button2);
         btn9 = findViewById(R.id.button3);
+        btnD = findViewById(R.id.buttondot);
 
         add = findViewById(R.id.button14);
         sub = findViewById(R.id.button13);
@@ -68,12 +69,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         eq.setOnClickListener(this);
         clear.setOnClickListener(this);
         delete.setOnClickListener(this);
+        btnD.setOnClickListener(this);
     }
 
     @SuppressLint({"NonConstantResourceId", "SetTextI18n"})
     @Override
     public void onClick(View v) {
     switch (v.getId()){
+        case R.id.buttondot:
+            display.append(".");
+            break;
         case R.id.button10:
           display.append("0");
             break;

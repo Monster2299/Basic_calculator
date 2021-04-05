@@ -19,4 +19,5 @@
     <string name="delete">delete</string>
     <string name="name">Simple Calculator</string>
     <string name="mehedi">Mehedi</string>
+    <string name="dot">.</string>
 </resources>

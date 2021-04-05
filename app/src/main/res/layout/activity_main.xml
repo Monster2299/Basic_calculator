@@ -20,9 +20,10 @@
         android:maxLines="4"
         android:textColor="@color/white"
         android:textSize="46sp"
-        
         android:focusable="false"
-        />
+        android:autofillHints="0"
+        android:inputType="text"
+        tools:ignore="LabelFor" />
 </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,9 +33,10 @@
             android:id="@+id/delete"
             style="@style/CardView.Dark"
             android:layout_width="209dp"
-            android:layout_height="53dp"
+            android:layout_height="77dp"
             android:backgroundTint="#E91E63"
             android:text="@string/delete"
+            android:textSize="24sp"
             android:textColor="#FBFAFA"
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="206dp" />
@@ -43,9 +45,10 @@
             android:id="@+id/clear"
             style="@style/CardView.Dark"
             android:layout_width="202dp"
-            android:layout_height="52dp"
+            android:layout_height="77dp"
             android:backgroundTint="#F80707"
             android:text="@string/c"
+            android:textSize="24sp"
             android:textColor="#F8F5F5"
             tools:layout_editor_absoluteX="209dp"
             tools:layout_editor_absoluteY="206dp" />
@@ -225,11 +228,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-         <Button
-            style="@style/CardView.Dark"
+        <Button
             android:id="@+id/button10"
-            android:layout_width="107dp"
-            android:layout_height="108dp"
+            style="@style/CardView.Dark"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
             android:backgroundTint="@color/material_on_primary_disabled"
             android:text="@string/z"
             android:textColor="@color/white"
@@ -239,10 +242,24 @@
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="607dp" />
 
-         <Button
+        <Button
+            android:id="@+id/buttondot"
             style="@style/CardView.Dark"
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:text="@string/dot"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="46sp"
+            app:rippleColor="@color/white"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="607dp" />
+
+        <Button
             android:id="@+id/button14"
-            android:layout_width="152dp"
+            style="@style/CardView.Dark"
+            android:layout_width="102dp"
             android:layout_height="108dp"
             android:backgroundTint="#4CAF50"
             android:text="@string/add"
@@ -250,17 +267,17 @@
             tools:layout_editor_absoluteX="122dp"
             tools:layout_editor_absoluteY="607dp" />
 
-          <Button
-            style="@style/CardView.Dark"
+        <Button
             android:id="@+id/button15"
-            android:layout_width="153dp"
+            style="@style/CardView.Dark"
+            android:layout_width="121dp"
             android:layout_height="107dp"
             android:backgroundTint="#FF9800"
             android:text="@string/eq"
             android:textSize="42sp"
             tools:layout_editor_absoluteX="280dp"
             tools:layout_editor_absoluteY="608dp"
-          
+
             />
 
     </LinearLayout>
